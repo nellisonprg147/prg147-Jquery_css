@@ -56,6 +56,22 @@ p{
     margin-left: 10px;
 
 }
+#printButton{
+    display: inline-block;
+    height:40px;
+    min-width: 40px;
+    background-color: lightblue;
+    color: black;
+    border-radius: 5px;
+    border:solid;
+    border-color: black;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 5px;
+    float: left;
+
+}
 #smallLetter{
     display: inline-block;
     height:20px;
@@ -162,4 +178,22 @@ p{
 }
 .bold{
     font-weight: bold;
+}
+@media print {
+
+    #printButton {display:none;}
+    #buttonPOne{display:none;}
+    #buttonPTwo {display:none;}
+    #buttonPThree {display:none;}
+    #buttonG {display:none;}
+    #boldText {display:none;}
+    #smallLetter {display:none;}
+    #mediumLeter {display:none;}
+    #lagreLetter {display:none;}
+    .footer {display:none;}
+
+
+    .site-description {display:none;}
+    .site-title {display:none;}
+
 }

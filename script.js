@@ -27,4 +27,7 @@ $(document).ready(function(){
     $("#boldText").click(function(){
         $("p").toggleClass("bold");
     });
+    $("#printButton").click(function() {
+        window.print();
+    });
 });
